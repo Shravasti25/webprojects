@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Info</title>
+  <style>
+    /* Full background with a fresh nature photo */
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80') 
+                  no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Transparent info card */
+    .info-card {
+      background: rgba(255, 255, 255, 0.85);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+      text-align: center;
+      width: 360px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .info-card h1 {
+      color: #2e8b57;
+      margin-bottom: 10px;
+    }
+
+    .info-card p {
+      font-size: 1.1rem;
+      margin: 8px 0;
+    }
+
+    .info-card a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #2e8b57;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .info-card a:hover {
+      background: #3cb371;
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="info-card">
+    <h1>🌸 Shravasti Chaudhari</h1>
+    <p><strong>College:</strong> XYZ Institute of Technology</p>
+    <p><strong>Course:</strong> B.Tech in Computer Science</p>
+    <p><strong>Email:</strong> shravasti@example.com</p>
+    <p><strong>Contact:</strong> +91 9876543210</p>
+    <a href="mailto:shravasti@example.com">Contact Me</a>
+  </div>
+</body>
+</html>
